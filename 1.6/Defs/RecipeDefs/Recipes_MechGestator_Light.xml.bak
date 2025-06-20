@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef ParentName="LightMechanoidRecipe">
+    <defName>Gastromech</defName>
+    <label>gestate gastromech</label>
+    <description>Gestate a gastromech mechanoid.</description>
+    <researchPrerequisite>StandardMechtech</researchPrerequisite>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreRegular</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <Mech_Gastromech>1</Mech_Gastromech>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>Mech_Gastromech</ThingDef>
+    </descriptionHyperlinks>
+	<recipeUsers>
+		<li>MechGestator</li>
+	</recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef ParentName="LightMechanoidRecipe">
+    <defName>Decorator</defName>
+    <label>gestate decorator</label>
+    <description>Gestate a decorator mechanoid.</description>
+    <researchPrerequisite>StandardMechtech</researchPrerequisite>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreRegular</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <Mech_Decorator>1</Mech_Decorator>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>Mech_Decorator</ThingDef>
+    </descriptionHyperlinks>
+	<recipeUsers>
+		<li>MechGestator</li>
+	</recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef ParentName="LightMechanoidRecipe">
+    <defName>Scavoid</defName>
+    <label>gestate scavoid</label>
+    <description>Gestate a scavoid mechanoid.</description>
+	<formingTicks>30000</formingTicks> <!-- 12 hours -->
+    <researchPrerequisite>BasicMechtech</researchPrerequisite>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <products>
+      <Mech_Scavoid>1</Mech_Scavoid>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>Mech_Scavoid</ThingDef>
+    </descriptionHyperlinks>
+	<recipeUsers>
+		<li>MechGestator</li>
+	</recipeUsers>
+  </RecipeDef>
+
+</Defs>

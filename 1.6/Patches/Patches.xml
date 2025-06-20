@@ -1,0 +1,521 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <!--Wardron-->
+  <Operation MayRequire="Ludeon.RimWorld.Biotech" Class="PatchOperationConditional">
+    <xpath>Defs/WorkGiverDef[defName="DoExecution"]/canBeDoneByMechs</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/WorkGiverDef[defName="DoExecution"]</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/WorkGiverDef[defName="DoExecution"]/canBeDoneByMechs</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </match>
+  </Operation>
+  
+  <Operation MayRequire="Ludeon.RimWorld.Biotech" Class="PatchOperationConditional">
+    <xpath>Defs/WorkGiverDef[defName="ExecuteGuiltyColonist"]/canBeDoneByMechs</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/WorkGiverDef[defName="ExecuteGuiltyColonist"]</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/WorkGiverDef[defName="ExecuteGuiltyColonist"]/canBeDoneByMechs</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </match>
+  </Operation>
+  
+  <Operation MayRequire="Ludeon.RimWorld.Biotech" Class="PatchOperationConditional">
+    <xpath>Defs/WorkGiverDef[defName="ReleasePrisoner"]/canBeDoneByMechs</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/WorkGiverDef[defName="ReleasePrisoner"]</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/WorkGiverDef[defName="ReleasePrisoner"]/canBeDoneByMechs</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </match>
+  </Operation>
+  
+  <Operation MayRequire="Ludeon.RimWorld.Biotech" Class="PatchOperationConditional">
+    <xpath>Defs/WorkGiverDef[defName="TakePrisonerToBed"]/canBeDoneByMechs</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/WorkGiverDef[defName="TakePrisonerToBed"]</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/WorkGiverDef[defName="TakePrisonerToBed"]/canBeDoneByMechs</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </match>
+  </Operation>
+  
+  <Operation MayRequire="Ludeon.RimWorld.Biotech" Class="PatchOperationConditional">
+    <xpath>Defs/WorkGiverDef[defName="FeedPrisoner"]/canBeDoneByMechs</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/WorkGiverDef[defName="FeedPrisoner"]</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/WorkGiverDef[defName="FeedPrisoner"]/canBeDoneByMechs</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </match>
+  </Operation>
+  
+  <Operation MayRequire="Ludeon.RimWorld.Biotech" Class="PatchOperationConditional">
+    <xpath>Defs/WorkGiverDef[defName="DeliverFoodToPrisoner"]/canBeDoneByMechs</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/WorkGiverDef[defName="DeliverFoodToPrisoner"]</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/WorkGiverDef[defName="DeliverFoodToPrisoner"]/canBeDoneByMechs</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </match>
+  </Operation>
+  <Operation MayRequire="Ludeon.RimWorld.Biotech" Class="PatchOperationConditional">
+    <xpath>Defs/WorkGiverDef[defName="ChatWithPrisoner"]/canBeDoneByMechs</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/WorkGiverDef[defName="ChatWithPrisoner"]</xpath>
+      <value>
+        <canBeDoneByMechs>false</canBeDoneByMechs>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/WorkGiverDef[defName="ChatWithPrisoner"]/canBeDoneByMechs</xpath>
+      <value>
+        <canBeDoneByMechs>false</canBeDoneByMechs>
+      </value>
+    </match>
+  </Operation>
+  <Operation MayRequire="Ludeon.RimWorld.Biotech,Ludeon.RimWorld.Ideology" Class="PatchOperationConditional">
+    <xpath>Defs/WorkGiverDef[defName="EnslavePrisoner"]/canBeDoneByMechs</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/WorkGiverDef[defName="EnslavePrisoner"]</xpath>
+      <value>
+        <canBeDoneByMechs>false</canBeDoneByMechs>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/WorkGiverDef[defName="EnslavePrisoner"]/canBeDoneByMechs</xpath>
+      <value>
+        <canBeDoneByMechs>false</canBeDoneByMechs>
+      </value>
+    </match>
+  </Operation>
+  
+  <Operation MayRequire="Ludeon.RimWorld.Biotech,Ludeon.RimWorld.Ideology" Class="PatchOperationConditional">
+    <xpath>Defs/WorkGiverDef[defName="ConvertPrisoner"]/canBeDoneByMechs</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/WorkGiverDef[defName="ConvertPrisoner"]</xpath>
+      <value>
+        <canBeDoneByMechs>false</canBeDoneByMechs>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/WorkGiverDef[defName="ConvertPrisoner"]/canBeDoneByMechs</xpath>
+      <value>
+        <canBeDoneByMechs>false</canBeDoneByMechs>
+      </value>
+    </match>
+  </Operation>
+
+
+  <!--Fabricor-->
+
+  <Operation MayRequire="Ludeon.RimWorld.Biotech" Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Mech_Fabricor"]/race/mechEnabledWorkTypes/li[text() = "Research"]</xpath>
+  </Operation>
+  
+ <!--Mechamind-->
+
+  <Operation MayRequire="Ludeon.RimWorld.Biotech" Class="PatchOperationConditional">
+    <xpath>Defs/WorkGiverDef[defName="GroundPenetratingScan"]/canBeDoneByMechs</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/WorkGiverDef[defName="GroundPenetratingScan"]</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/WorkGiverDef[defName="GroundPenetratingScan"]/canBeDoneByMechs</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </match>
+  </Operation>
+  
+  <Operation MayRequire="Ludeon.RimWorld.Biotech" Class="PatchOperationConditional">
+    <xpath>Defs/WorkGiverDef[defName="LongRangeScan"]/canBeDoneByMechs</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/WorkGiverDef[defName="LongRangeScan"]</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/WorkGiverDef[defName="LongRangeScan"]/canBeDoneByMechs</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </match>
+  </Operation>
+  
+  <Operation MayRequire="Ludeon.RimWorld.Biotech" Class="PatchOperationConditional">
+    <xpath>Defs/WorkGiverDef[defName="Research"]/canBeDoneByMechs</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/WorkGiverDef[defName="Research"]</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/WorkGiverDef[defName="Research"]/canBeDoneByMechs</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </match>
+  </Operation>
+  
+  <!--Rancher-->
+  <Operation MayRequire="Ludeon.RimWorld.Biotech" Class="PatchOperationConditional">
+    <xpath>Defs/WorkGiverDef[defName="TakeRoamingAnimalsToPen"]/canBeDoneByMechs</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/WorkGiverDef[defName="TakeRoamingAnimalsToPen"]</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/WorkGiverDef[defName="TakeRoamingAnimalsToPen"]/canBeDoneByMechs</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </match>
+  </Operation>
+  
+  <Operation MayRequire="Ludeon.RimWorld.Biotech" Class="PatchOperationConditional">
+    <xpath>Defs/WorkGiverDef[defName="TakeToPen"]/canBeDoneByMechs</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/WorkGiverDef[defName="TakeToPen"]</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/WorkGiverDef[defName="TakeToPen"]/canBeDoneByMechs</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation MayRequire="Ludeon.RimWorld.Biotech" Class="PatchOperationConditional">
+    <xpath>Defs/WorkGiverDef[defName="Milk"]/canBeDoneByMechs</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/WorkGiverDef[defName="Milk"]</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/WorkGiverDef[defName="Milk"]/canBeDoneByMechs</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation MayRequire="Ludeon.RimWorld.Biotech" Class="PatchOperationConditional">
+    <xpath>Defs/WorkGiverDef[defName="Shear"]/canBeDoneByMechs</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/WorkGiverDef[defName="Shear"]</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/WorkGiverDef[defName="Shear"]/canBeDoneByMechs</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </match>
+  </Operation>
+  
+  <Operation MayRequire="Ludeon.RimWorld.Biotech" Class="PatchOperationConditional">
+    <xpath>Defs/WorkGiverDef[defName="ReleaseToWild"]/canBeDoneByMechs</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/WorkGiverDef[defName="ReleaseToWild"]</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/WorkGiverDef[defName="ReleaseToWild"]/canBeDoneByMechs</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation MayRequire="Ludeon.RimWorld.Biotech" Class="PatchOperationConditional">
+    <xpath>Defs/WorkGiverDef[defName="Slaughter"]/canBeDoneByMechs</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/WorkGiverDef[defName="Slaughter"]</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/WorkGiverDef[defName="Slaughter"]/canBeDoneByMechs</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation MayRequire="Ludeon.RimWorld.Biotech" Class="PatchOperationConditional">
+    <xpath>Defs/WorkGiverDef[defName="HandlingFeedPatientAnimals"]/canBeDoneByMechs</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/WorkGiverDef[defName="HandlingFeedPatientAnimals"]</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/WorkGiverDef[defName="HandlingFeedPatientAnimals"]/canBeDoneByMechs</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation MayRequire="Ludeon.RimWorld.Biotech" Class="PatchOperationConditional">
+    <xpath>Defs/WorkGiverDef[defName="Train"]/canBeDoneByMechs</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/WorkGiverDef[defName="Train"]</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/WorkGiverDef[defName="Train"]/canBeDoneByMechs</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </match>
+  </Operation>
+  
+  <Operation MayRequire="Ludeon.RimWorld.Biotech" Class="PatchOperationConditional">
+    <xpath>Defs/WorkGiverDef[defName="Tame"]/canBeDoneByMechs</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/WorkGiverDef[defName="Tame"]</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/WorkGiverDef[defName="Tame"]/canBeDoneByMechs</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation MayRequire="Ludeon.RimWorld.Biotech" Class="PatchOperationConditional">
+    <xpath>Defs/WorkGiverDef[defName="RebalanceAnimalsInPens"]/canBeDoneByMechs</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/WorkGiverDef[defName="RebalanceAnimalsInPens"]</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/WorkGiverDef[defName="RebalanceAnimalsInPens"]/canBeDoneByMechs</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </match>
+  </Operation>
+
+  <!-- Scavoid -->
+  <Operation MayRequire="Ludeon.RimWorld.Biotech" Class="PatchOperationConditional">
+    <xpath>Defs/WorkGiverDef[defName="DoBillsCremate"]/canBeDoneByMechs</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/WorkGiverDef[defName="DoBillsCremate"]</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/WorkGiverDef[defName="DoBillsCremate"]/canBeDoneByMechs</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationInsert">
+    <xpath>Defs/ThinkTreeDef/thinkRoot/subNodes/li/subNodes/li/subNodes/li[@Class="ThinkNode_ConditionalWorkMode"]/subNodes/li[@Class="JobGiver_Work" and ./emergency="true"]</xpath>
+    <order>Append</order>
+    <value>
+      <li Class="ThinkNode_ConditionalPawnKind">
+        <pawnKind>Mech_Scavoid</pawnKind>
+        <subNodes>
+          <li Class="SpecificWorkJobGiver.JobGiver_SpecificWork">
+            <workGiverDef>DoBillsCremate</workGiverDef>
+          </li>
+        </subNodes>
+      </li>
+    </value>
+  </Operation>
+
+  <!-- Work Enabling Patches -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/WorkGiverDef[defName="TakeBeerOutOfFermentingBarrel"]/canBeDoneByMechs</xpath>
+		<value>
+			<canBeDoneByMechs>True</canBeDoneByMechs>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/WorkGiverDef[defName="FillFermentingBarrel"]/canBeDoneByMechs</xpath>
+		<value>
+			<canBeDoneByMechs>True</canBeDoneByMechs>
+		</value>
+	</Operation>
+  
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/WorkGiverDef[defName="DoBillsBrew"]/canBeDoneByMechs</xpath>
+    <value>
+      <canBeDoneByMechs>True</canBeDoneByMechs>
+    </value>
+  </Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/WorkGiverDef[defName="Strip"]/canBeDoneByMechs</xpath>
+		<value>
+			<canBeDoneByMechs>True</canBeDoneByMechs>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/WorkGiverDef[defName="ExtractTree"]/canBeDoneByMechs</xpath>
+		<value>
+			<canBeDoneByMechs>True</canBeDoneByMechs>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/WorkGiverDef[defName="Replant"]/canBeDoneByMechs</xpath>
+		<value>
+			<canBeDoneByMechs>True</canBeDoneByMechs>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/WorkGiverDef[defName="PaintBuilding"]/canBeDoneByMechs</xpath>
+		<value>
+			<canBeDoneByMechs>True</canBeDoneByMechs>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/WorkGiverDef[defName="PaintFloor"]/canBeDoneByMechs</xpath>
+		<value>
+			<canBeDoneByMechs>True</canBeDoneByMechs>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/WorkGiverDef[defName="RemovePaintBuilding"]/canBeDoneByMechs</xpath>
+		<value>
+			<canBeDoneByMechs>True</canBeDoneByMechs>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/WorkGiverDef[defName="RemovePaintFloor"]/canBeDoneByMechs</xpath>
+		<value>
+			<canBeDoneByMechs>True</canBeDoneByMechs>
+		</value>
+	</Operation>
+
+<!-- Royalty Patches -->
+<Operation Class="PatchOperationSequence">
+  <operations>
+	<li Class="PatchOperationReplace" MayRequire="Ludeon.Rimworld.Ideoligion">
+		<xpath>Defs/WorkGiverDef[defName="ExtractSkull"]/canBeDoneByMechs</xpath>
+		<value>
+			<canBeDoneByMechs>True</canBeDoneByMechs>
+		</value>
+	</li>
+  </operations>
+</Operation>
+<!-- Light Mech Ressurection Recipe Patches -->
+	
+  <Operation MayRequire="Ludeon.RimWorld.Biotech" Class="PatchOperationAdd">
+		 <xpath>Defs/RecipeDef[defName = "ResurrectLightMech"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>Corpse_Mech_Mechamind</li>
+		</value>
+	</Operation>
+  
+    <Operation MayRequire="Ludeon.RimWorld.Biotech" Class="PatchOperationAdd">
+		 <xpath>Defs/RecipeDef[defName = "ResurrectLightMech"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>Corpse_Mech_Wardron</li>
+		</value>
+	</Operation>
+  
+	<Operation MayRequire="Ludeon.RimWorld.Biotech" Class="PatchOperationInsert">
+		<xpath>Defs/RecipeDef[defName="ResurrectLightMech"]/fixedIngredientFilter/thingDefs/li</xpath>
+		<value>
+			<li>Corpse_Mech_Gastromech</li>
+		</value>
+	</Operation>
+
+	<Operation MayRequire="Ludeon.RimWorld.Biotech" Class="PatchOperationInsert">
+		<xpath>Defs/RecipeDef[defName="ResurrectLightMech"]/fixedIngredientFilter/thingDefs/li</xpath>
+		<value>
+			<li>Corpse_Mech_Decorator</li>
+		</value>
+	</Operation>
+
+	<Operation MayRequire="Ludeon.RimWorld.Biotech" Class="PatchOperationInsert">
+		<xpath>Defs/RecipeDef[defName="ResurrectLightMech"]/fixedIngredientFilter/thingDefs/li</xpath>
+		<value>
+			<li>Corpse_Mech_Scavoid</li>
+		</value>
+	</Operation>
+  
+  <Operation MayRequire="Ludeon.RimWorld.Biotech" Class="PatchOperationAdd">
+    <xpath>Defs/RecipeDef[defName = "ResurrectLightMech"]/fixedIngredientFilter/thingDefs</xpath>
+    <value>
+      <li>Corpse_Mech_Rancher</li>
+    </value>
+  </Operation>
+
+</Patch>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+    <defName>Mechamind_EMP</defName>
+    <statBases>
+      <Mass>0</Mass>
+      <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+      <SightsEfficiency>1</SightsEfficiency>
+      <ShotSpread>0.16</ShotSpread>
+      <SwayFactor>1.06</SwayFactor>
+      <Bulk>0</Bulk>
+      <WorkToMake>7000</WorkToMake>
+    </statBases>
+    <Properties>
+      <recoilAmount>2.72</recoilAmount>
+      <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+      <hasStandardCommand>true</hasStandardCommand>
+      <defaultProjectile>Bullet_Mechamind_EMP_CE</defaultProjectile>
+      <warmupTime>3.5</warmupTime>
+      <range>40</range>
+      <soundCast>PsychicShockLanceCast</soundCast>
+      <soundCastTail>GunTail_Medium</soundCastTail>
+      <muzzleFlashScale>14</muzzleFlashScale>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+    </Properties>
+    <FireModes>
+      <aiAimMode>Snapshot</aiAimMode>
+    </FireModes>
+    <weaponTags>
+      <li>CE_AI_BROOM</li>
+      <li>NoSwitch</li>
+      <li>Mechamind_EMPEmitter</li>
+    </weaponTags>
+  </Operation>
+
+</Patch>

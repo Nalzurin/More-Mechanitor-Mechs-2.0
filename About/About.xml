@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>More Mechanitor Mechs 2.0</name>
-	<packageId>Nalzurin.MoreMechanitorMechs20</packageId>
-	<author>Nalzurin, UltraEmailMan</author>
-	<supportedVersions>
-					 <li>1.5</li>
-	</supportedVersions>
-	<description>
-Adds more mechanoids to fill in the missing skill areas. No longer will your evil robot overlord have to cook his own meals.
-	</description>
+  <name>More Mechanitor Mechs 2.0</name>
+  <packageId>Nalzurin.MoreMechanitorMechs20</packageId>
+  <author>Nalzurin, UltraEmailMan</author>
+  <supportedVersions>
+    <li>1.5</li>
+    <li>1.6</li>
+  </supportedVersions>
+  <description>
+    Adds more mechanoids to fill in the missing skill areas. No longer will your evil robot overlord have to cook his own meals.
+  </description>
   <modDependencies>
     <li>
       <packageId>brrainz.harmony</packageId>
@@ -25,12 +26,12 @@ Adds more mechanoids to fill in the missing skill areas. No longer will your evi
   <loadBefore>
     <li>avilmask.animalcontrols</li>
   </loadBefore>
-	<loadAfter>
-		<li>Ludeon.Rimworld.Biotech</li>
-		<li>FrozenSnowFox.ComplexJobs</li>
-		<li>FrozenSnowFox.ComplexJobsLegacy</li>
+  <loadAfter>
+    <li>Ludeon.Rimworld.Biotech</li>
+    <li>FrozenSnowFox.ComplexJobs</li>
+    <li>FrozenSnowFox.ComplexJobsLegacy</li>
     <li>wvc.sergkart.biotech.MoreMechanoidsWorkModes</li>
     <li>PeteTimesSix.ResearchReinvented</li>
     <li>CETeam.CombatExtended</li>
-	</loadAfter>
+  </loadAfter>
 </ModMetaData>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <BodyPartGroupDef>
+    <defName>RightSpatula</defName>
+    <label>right spatula</label>
+    <labelShort>spatula</labelShort>
+  </BodyPartGroupDef>
+
+  <BodyPartGroupDef>
+    <defName>SmallLegSpike</defName>
+    <label>leg spike</label>
+    <labelShort>spike</labelShort>
+  </BodyPartGroupDef>
+
+</Defs>

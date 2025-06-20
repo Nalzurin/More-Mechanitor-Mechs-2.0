@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- ================== Projectiles ================== -->
+
+  <ThingDef ParentName="BaseExplosiveBullet">
+    <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+    <defName>Bullet_Mechamind_EMP_CE</defName>
+    <label>EMP Projectile</label>
+    <graphicData>
+      <texPath>Things/Weapon/Mechamind_Projectile</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <color>(68,150,215)</color>
+    </graphicData>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <speed>40</speed>
+      <damageDef>EMP</damageDef>
+      <damageAmountBase>22</damageAmountBase>
+      <dropsCasings>false</dropsCasings>
+      <explosionRadius>1.5</explosionRadius>
+      <ai_IsIncendiary>false</ai_IsIncendiary>
+      <arcHeightFactor>0.2</arcHeightFactor>
+      <shadowSize>0.6</shadowSize>
+    </projectile>
+  </ThingDef>
+</Defs>

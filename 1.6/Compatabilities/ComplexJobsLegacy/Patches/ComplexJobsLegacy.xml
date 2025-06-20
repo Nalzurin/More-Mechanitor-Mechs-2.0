@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- FSF Complex Jobs Legacy Patches -->
+<!--Rancher-->
+  <Operation MayRequire="Ludeon.RimWorld.Biotech" Class="PatchOperationConditional">
+    <xpath>Defs/WorkGiverDef[defName="Train"]/canBeDoneByMechs</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/WorkGiverDef[defName="Train"]</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/WorkGiverDef[defName="Train"]/canBeDoneByMechs</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation MayRequire="Ludeon.RimWorld.Biotech" Class="PatchOperationConditional">
+    <xpath>Defs/WorkGiverDef[defName="Tame"]/canBeDoneByMechs</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/WorkGiverDef[defName="Tame"]</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/WorkGiverDef[defName="Tame"]/canBeDoneByMechs</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </match>
+  </Operation>
+
+      
+  <Operation Class="PatchOperationSequence">
+  <operations>
+	<li Class="PatchOperationInsert" MayRequire="FrozenSnowFox.ComplexJobsLegacy">
+		<xpath>Defs/ThingDef[defName="Mech_Gastromech"]/race/mechEnabledWorkTypes/li</xpath>
+		<value>
+			<li>FSFProduction</li>
+		</value>
+	</li>
+  
+  </operations>
+</Operation>
+
+  <Operation Class="PatchOperationInsert" MayRequire="FrozenSnowFox.ComplexJobsLegacy">
+    <xpath>Defs/ThingDef[defName="Mech_Scavoid"]/race/mechEnabledWorkTypes/li</xpath>
+    <value>
+      <li>FSFCremating</li>
+    </value>
+  </Operation>
+</Patch>
