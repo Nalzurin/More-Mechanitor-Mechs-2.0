@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- Work Enabling Patches -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/WorkGiverDef[defName="TakeBeerOutOfFermentingBarrel"]/canBeDoneByMechs</xpath>
+		<value>
+			<canBeDoneByMechs>True</canBeDoneByMechs>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/WorkGiverDef[defName="FillFermentingBarrel"]/canBeDoneByMechs</xpath>
+		<value>
+			<canBeDoneByMechs>True</canBeDoneByMechs>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/WorkGiverDef[defName="Strip"]/canBeDoneByMechs</xpath>
+		<value>
+			<canBeDoneByMechs>True</canBeDoneByMechs>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/WorkGiverDef[defName="ExtractTree"]/canBeDoneByMechs</xpath>
+		<value>
+			<canBeDoneByMechs>True</canBeDoneByMechs>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/WorkGiverDef[defName="Replant"]/canBeDoneByMechs</xpath>
+		<value>
+			<canBeDoneByMechs>True</canBeDoneByMechs>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/WorkGiverDef[defName="PaintBuilding"]/canBeDoneByMechs</xpath>
+		<value>
+			<canBeDoneByMechs>True</canBeDoneByMechs>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/WorkGiverDef[defName="PaintFloor"]/canBeDoneByMechs</xpath>
+		<value>
+			<canBeDoneByMechs>True</canBeDoneByMechs>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/WorkGiverDef[defName="RemovePaintBuilding"]/canBeDoneByMechs</xpath>
+		<value>
+			<canBeDoneByMechs>True</canBeDoneByMechs>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/WorkGiverDef[defName="RemovePaintFloor"]/canBeDoneByMechs</xpath>
+		<value>
+			<canBeDoneByMechs>True</canBeDoneByMechs>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/WorkGiverDef[defName="DoctorTendToAnimals"]/canBeDoneByMechs</xpath>
+		<value>
+			<canBeDoneByMechs>True</canBeDoneByMechs>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/WorkGiverDef[defName="DoctorFeedAnimals"]/canBeDoneByMechs</xpath>
+		<value>
+			<canBeDoneByMechs>True</canBeDoneByMechs>
+		</value>
+	</Operation>
+
+<!--Work Disabling Patches-->
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="Mech_Fabricor"]/race/mechEnabledWorkTypes/li[text()="Cooking"]</xpath>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/WorkGiverDef[defName="Train"]</xpath>
+		<value>
+			<canBeDoneByMechs>True</canBeDoneByMechs>
+		</value>
+	</Operation>
+
+<!-- Royalty Patches -->
+<Operation Class="PatchOperationSequence">
+  <operations>
+	<li Class="PatchOperationReplace" MayRequire="Ludeon.Rimworld.Ideoligion">
+		<xpath>Defs/WorkGiverDef[defName="ExtractSkull"]/canBeDoneByMechs</xpath>
+		<value>
+			<canBeDoneByMechs>True</canBeDoneByMechs>
+		</value>
+	</li>
+  </operations>
+</Operation>
+<!-- Light Mech Ressurection Recipe Patches -->
+	
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/RecipeDef[defName="ResurrectLightMech"]/fixedIngredientFilter/thingDefs/li</xpath>
+		<value>
+			<li>Corpse_Mech_Gastromech</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/RecipeDef[defName="ResurrectLightMech"]/fixedIngredientFilter/thingDefs/li</xpath>
+		<value>
+			<li>Corpse_Mech_Decorator</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/RecipeDef[defName="ResurrectLightMech"]/fixedIngredientFilter/thingDefs/li</xpath>
+		<value>
+			<li>Corpse_Mech_Scavoid</li>
+		</value>
+	</Operation>
+
+<!-- FSF Complex Jobs Patches -->
+<Operation Class="PatchOperationSequence">
+  <operations>
+	<li Class="PatchOperationInsert" MayRequire="FrozenSnowFox.ComplexJobsLegacy">
+		<xpath>Defs/ThingDef[defName="Mech_Scavoid"]/race/mechEnabledWorkTypes/li</xpath>
+		<value>
+			<li>FSFCremating</li>
+		</value>
+	</li>
+	<li Class="PatchOperationInsert" MayRequire="FrozenSnowFox.ComplexJobsLegacy">
+		<xpath>Defs/ThingDef[defName="Mech_Gastromech"]/race/mechEnabledWorkTypes/li</xpath>
+		<value>
+			<li>FSFButcher</li>
+			<li>FSFBrewing</li>
+		</value>
+	</li>
+	<li Class="PatchOperationInsert" MayRequire="FrozenSnowFox.ComplexJobsLegacy">
+		<xpath>Defs/ThingDef[defName="Mech_Rancher"]/race/mechEnabledWorkTypes/li</xpath>
+		<value>
+			<li>FSFTraining</li>
+		</value>
+	</li>
+	<li Class="PatchOperationInsert" MayRequire="FrozenSnowFox.ComplexJobs">
+		<xpath>Defs/ThingDef[defName="Mech_Scavoid"]/race/mechEnabledWorkTypes/li</xpath>
+		<value>
+			<li>FSFCremating</li>
+		</value>
+	</li>
+	<li Class="PatchOperationInsert" MayRequire="FrozenSnowFox.ComplexJobs">
+		<xpath>Defs/ThingDef[defName="Mech_Gastromech"]/race/mechEnabledWorkTypes/li</xpath>
+		<value>
+			<li>FSFButcher</li>
+			<li>FSFBrewing</li>
+		</value>
+	</li>
+	<li Class="PatchOperationInsert" MayRequire="FrozenSnowFox.ComplexJobs">
+		<xpath>Defs/ThingDef[defName="Mech_Rancher"]/race/mechEnabledWorkTypes/li</xpath>
+		<value>
+			<li>FSFTraining</li>
+		</value>
+	</li>
+  </operations>
+</Operation>
+
+</Patch>

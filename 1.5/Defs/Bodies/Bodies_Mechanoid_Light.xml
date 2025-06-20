@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Mechamind -->
+  <BodyDef>
+    <defName>Mech_Mechamind</defName>
+    <label>mechamind</label>
+    <corePart>
+      <def>MechanicalThorax</def>
+      <height>Middle</height>
+      <depth>Outside</depth>
+      <parts>
+        <li>
+          <def>MechanicalNeck</def>
+          <coverage>0.10</coverage>
+          <height>Top</height>
+          <parts>
+            <li>
+              <def>MechanicalHead</def>
+              <groups>
+                <li>HeadAttackTool</li>
+              </groups>
+              <coverage>0.80</coverage>
+              <parts>
+                <li>
+                  <def>ArtificialBrain</def>
+                  <coverage>0.10</coverage>
+                  <depth>Inside</depth>
+                </li>
+                <li>
+                  <def>EMPEmitterArray</def>
+                  <coverage>0.05</coverage>
+                  <depth>Outside</depth>
+                </li>
+                <li>
+                  <def>SightSensor</def>
+                  <customLabel>left sight sensor</customLabel>
+                  <coverage>0.13</coverage>
+                </li>
+                <li>
+                  <def>HearingSensor</def>
+                  <customLabel>left hearing sensor</customLabel>
+                  <coverage>0.10</coverage>
+                </li>
+                <li>
+                  <def>SmellSensor</def>
+                  <coverage>0.10</coverage>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>MechanicalShoulder</def>
+          <customLabel>top left shoulder</customLabel>
+          <coverage>0.1</coverage>
+          <parts>
+            <li>
+              <def>MechanicalArm</def>
+              <customLabel>top left arm</customLabel>
+              <coverage>0.85</coverage>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>MechanicalShoulder</def>
+          <customLabel>middle left shoulder</customLabel>
+          <coverage>0.1</coverage>
+          <parts>
+            <li>
+              <def>MechanicalArm</def>
+              <customLabel>middle left arm</customLabel>
+              <coverage>0.85</coverage>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>MechanicalShoulder</def>
+          <customLabel>bottom left shoulder</customLabel>
+          <coverage>0.1</coverage>
+          <parts>
+            <li>
+              <def>MechanicalArm</def>
+              <customLabel>bottom left arm</customLabel>
+              <coverage>0.85</coverage>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>MechanicalShoulder</def>
+          <customLabel>top right shoulder</customLabel>
+          <coverage>0.1</coverage>
+          <parts>
+            <li>
+              <def>MechanicalArm</def>
+              <customLabel>top right arm</customLabel>
+              <coverage>0.85</coverage>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>MechanicalShoulder</def>
+          <customLabel>middle right shoulder</customLabel>
+          <coverage>0.1</coverage>
+          <parts>
+            <li>
+              <def>MechanicalArm</def>
+              <customLabel>middle right arm</customLabel>
+              <coverage>0.85</coverage>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>MechanicalShoulder</def>
+          <customLabel>bottom right shoulder</customLabel>
+          <coverage>0.1</coverage>
+          <parts>
+            <li>
+              <def>MechanicalArm</def>
+              <customLabel>bottom right arm</customLabel>
+              <coverage>0.85</coverage>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>AntiGravityGenerator</def>
+          <coverage>0.15</coverage>
+          <height>Bottom</height>
+        </li>
+        <li>
+          <def>Reactor</def>
+          <coverage>0.06</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>FluidReprocessor</def>
+          <coverage>0.04</coverage>
+          <depth>Inside</depth>
+        </li>
+      </parts>
+    </corePart>
+  </BodyDef>
+
+
+<!-- Gastromech -->
+  <BodyDef>
+    <defName>Mech_Gastromech</defName>
+    <label>gastromech</label>
+    <corePart>
+      <def>MechanicalThorax</def>
+      <height>Middle</height>
+      <depth>Outside</depth>
+      <parts>
+        <li>
+          <def>MechanicalNeck</def>
+          <coverage>0.10</coverage>
+          <height>Top</height>
+          <parts>
+            <li>
+              <def>MechanicalHead</def>
+              <coverage>0.80</coverage>
+              <groups>
+                <li>HeadAttackTool</li>
+              </groups>
+              <parts>
+                <li>
+                  <def>ArtificialBrain</def>
+                  <coverage>0.10</coverage>
+                  <depth>Inside</depth>
+                </li>
+                <li>
+                  <def>SightSensor</def>
+                  <customLabel>left sight sensor</customLabel>
+                  <coverage>0.13</coverage>
+                </li>
+                <li>
+                  <def>HearingSensor</def>
+                  <customLabel>left hearing sensor</customLabel>
+                  <coverage>0.10</coverage>
+                </li>
+                <li>
+                  <def>SmellSensor</def>
+                  <coverage>0.10</coverage>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>MechanicalShoulder</def>
+          <customLabel>left shoulder</customLabel>
+          <coverage>0.17</coverage>
+          <parts>
+            <li>
+              <def>MechanicalArm</def>
+              <customLabel>left arm</customLabel>
+              <coverage>0.85</coverage>
+              <parts>
+                <li>
+                  <def>Blade</def>
+                  <customLabel>left blade</customLabel>
+                  <coverage>0.3</coverage>
+                  <groups>
+                    <li>LeftBlade</li>
+                  </groups>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li> 
+		<li>
+          <def>MechanicalShoulder</def>
+          <customLabel>right shoulder</customLabel>
+          <coverage>0.17</coverage>
+          <parts>
+            <li>
+              <def>MechanicalArm</def>
+              <customLabel>right arm</customLabel>
+              <coverage>0.85</coverage>
+              <parts>
+                <li>
+                  <def>MechanicalHand</def>
+                  <customLabel>spatula</customLabel>
+                  <coverage>0.3</coverage>
+                  <groups>
+                    <li>RightSpatula</li>
+                  </groups>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li> 
+        <li>
+          <def>SmallMechanicalLeg</def>
+          <customLabel>left leg</customLabel>
+          <coverage>0.2</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>SmallMechanicalFoot</def>
+              <customLabel>left foot</customLabel>
+              <coverage>0.2</coverage>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>SmallMechanicalLeg</def>
+          <customLabel>right leg</customLabel>
+          <coverage>0.2</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>SmallMechanicalFoot</def>
+              <customLabel>right foot</customLabel>
+              <coverage>0.2</coverage>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>Reactor</def>
+          <coverage>0.06</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>FluidReprocessor</def>
+          <coverage>0.04</coverage>
+          <depth>Inside</depth>
+        </li>
+      </parts>
+    </corePart>
+  </BodyDef>
+
+
+<!-- Decorator -->
+  <BodyDef>
+    <defName>Mech_Decorator</defName>
+    <label>decorator</label>
+    <corePart>
+      <def>MechanicalThorax</def>
+      <height>Middle</height>
+      <depth>Outside</depth>
+      <parts>
+        <li>
+          <def>MechanicalNeck</def>
+          <coverage>0.10</coverage>
+          <height>Top</height>
+          <parts>
+            <li>
+              <def>MechanicalHead</def>
+              <coverage>0.80</coverage>
+              <groups>
+                <li>HeadAttackTool</li>
+              </groups>
+              <parts>
+                <li>
+                  <def>ArtificialBrain</def>
+                  <coverage>0.10</coverage>
+                  <depth>Inside</depth>
+                </li>
+                <li>
+                  <def>SightSensor</def>
+                  <customLabel>left sight sensor</customLabel>
+                  <coverage>0.13</coverage>
+                </li>
+                <li>
+                  <def>SightSensor</def>
+                  <customLabel>right sight sensor</customLabel>
+                  <coverage>0.13</coverage>
+                </li>
+                <li>
+                  <def>HearingSensor</def>
+                  <customLabel>left hearing sensor</customLabel>
+                  <coverage>0.10</coverage>
+                </li>
+                <li>
+                  <def>HearingSensor</def>
+                  <customLabel>right hearing sensor</customLabel>
+                  <coverage>0.10</coverage>
+                </li>
+                <li>
+                  <def>SmellSensor</def>
+                  <coverage>0.10</coverage>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>MechanicalShoulder</def>
+          <customLabel>top left shoulder</customLabel>
+          <coverage>0.05</coverage>
+          <parts>
+            <li>
+              <def>MechanicalArm</def>
+              <customLabel>top left arm</customLabel>
+              <coverage>0.5</coverage>
+              <parts>
+                <li>
+                  <def>Blade</def>
+                  <customLabel>top left blade</customLabel>
+                  <coverage>0.5</coverage>
+                  <groups>
+                    <li>LeftBlade</li>
+                  </groups>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>MechanicalShoulder</def>
+          <customLabel>middle left shoulder</customLabel>
+          <coverage>0.05</coverage>
+          <parts>
+            <li>
+              <def>MechanicalArm</def>
+              <customLabel>middle left arm</customLabel>
+              <coverage>0.5</coverage>
+              <parts>
+                <li>
+                  <def>Blade</def>
+                  <customLabel>middle left blade</customLabel>
+                  <coverage>0.5</coverage>
+                  <groups>
+                    <li>LeftBlade</li>
+                  </groups>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>MechanicalShoulder</def>
+          <customLabel>bottom left shoulder</customLabel>
+          <coverage>0.05</coverage>
+          <parts>
+            <li>
+              <def>MechanicalArm</def>
+              <customLabel>bottom left arm</customLabel>
+              <coverage>0.5</coverage>
+              <parts>
+                <li>
+                  <def>Blade</def>
+                  <customLabel>bottom left blade</customLabel>
+                  <coverage>0.5</coverage>
+                  <groups>
+                    <li>LeftBlade</li>
+                  </groups>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>MechanicalShoulder</def>
+          <customLabel>top right shoulder</customLabel>
+          <coverage>0.05</coverage>
+          <parts>
+            <li>
+              <def>MechanicalArm</def>
+              <customLabel>top right arm</customLabel>
+              <coverage>0.5</coverage>
+              <parts>
+                <li>
+                  <def>Blade</def>
+                  <customLabel>top right blade</customLabel>
+                  <coverage>0.5</coverage>
+                  <groups>
+                    <li>RightBlade</li>
+                  </groups>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>MechanicalShoulder</def>
+          <customLabel>middle right shoulder</customLabel>
+          <coverage>0.05</coverage>
+          <parts>
+            <li>
+              <def>MechanicalArm</def>
+              <customLabel>middle right arm</customLabel>
+              <coverage>0.5</coverage>
+              <parts>
+                <li>
+                  <def>Blade</def>
+                  <customLabel>middle right blade</customLabel>
+                  <coverage>0.5</coverage>
+                  <groups>
+                    <li>RightBlade</li>
+                  </groups>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>MechanicalShoulder</def>
+          <customLabel>bottom right shoulder</customLabel>
+          <coverage>0.05</coverage>
+          <parts>
+            <li>
+              <def>MechanicalArm</def>
+              <customLabel>bottom right arm</customLabel>
+              <coverage>0.5</coverage>
+              <parts>
+                <li>
+                  <def>Blade</def>
+                  <customLabel>bottom right blade</customLabel>
+                  <coverage>0.5</coverage>
+                  <groups>
+                    <li>RightBlade</li>
+                  </groups>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>MechanicalLeg</def>
+          <customLabel>left leg</customLabel>
+          <coverage>0.1</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>MechanicalFoot</def>
+              <customLabel>left foot</customLabel>
+              <coverage>0.2</coverage>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>MechanicalLeg</def>
+          <customLabel>right leg</customLabel>
+          <coverage>0.1</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>MechanicalFoot</def>
+              <customLabel>right foot</customLabel>
+              <coverage>0.2</coverage>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>Reactor</def>
+          <coverage>0.06</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>FluidReprocessor</def>
+          <coverage>0.04</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>FluidReprocessor</def>
+          <coverage>0.04</coverage>
+          <depth>Inside</depth>
+        </li>
+      </parts>
+    </corePart>
+  </BodyDef>
+
+<!-- Scavoid -->
+  <BodyDef>
+    <defName>Mech_Scavoid</defName>
+    <label>scavoid</label>
+    <corePart>
+      <def>MechanicalThorax</def>
+      <height>Middle</height>
+      <depth>Outside</depth>
+      <parts>
+        <li>
+          <def>MechanicalNeck</def>
+          <coverage>0.10</coverage>
+          <height>Top</height>
+          <parts>
+            <li>
+              <def>MechanicalHead</def>
+              <coverage>0.80</coverage>
+              <parts>
+                <li>
+                  <def>ArtificialBrain</def>
+                  <coverage>0.10</coverage>
+                  <depth>Inside</depth>
+                </li>
+                <li>
+                  <def>SightSensor</def>
+                  <customLabel>left sight sensor</customLabel>
+                  <coverage>0.13</coverage>
+                </li>
+                <li>
+                  <def>HearingSensor</def>
+                  <customLabel>left hearing sensor</customLabel>
+                  <coverage>0.10</coverage>
+                </li>
+                <li>
+                  <def>SmellSensor</def>
+                  <coverage>0.10</coverage>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>SmallMechanicalLimb</def>
+          <customLabel>front right limb</customLabel>
+          <coverage>0.15</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>SmallMechanicalMonopod</def>
+              <customLabel>front right monopod</customLabel>
+              <coverage>0.5</coverage>
+			  <parts>
+				<li>
+					<def>SmallSpike</def>
+					<customLabel>front right leg spike</customLabel>
+					<coverage>0.5</coverage>
+				<groups>
+					<li>SmallLegSpike</li>
+				</groups>
+				</li>
+			  </parts>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>SmallMechanicalLimb</def>
+          <customLabel>back right limb</customLabel>
+          <coverage>0.15</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>SmallMechanicalMonopod</def>
+              <customLabel>back right monopod</customLabel>
+              <coverage>0.5</coverage>
+			  <parts>
+				<li>
+					<def>SmallSpike</def>
+					<customLabel>back right leg spike</customLabel>
+					<coverage>0.5</coverage>
+				<groups>
+					<li>SmallLegSpike</li>
+				</groups>
+				</li>
+			  </parts>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>SmallMechanicalLimb</def>
+          <customLabel>front left limb</customLabel>
+          <coverage>0.15</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>SmallMechanicalMonopod</def>
+              <customLabel>front left monopod</customLabel>
+              <coverage>0.5</coverage>
+			  <parts>
+				<li>
+					<def>SmallSpike</def>
+					<customLabel>front left leg spike</customLabel>
+					<coverage>0.5</coverage>
+				<groups>
+					<li>SmallLegSpike</li>
+				</groups>
+				</li>
+			  </parts>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>SmallMechanicalLimb</def>
+          <customLabel>back left limb</customLabel>
+          <coverage>0.15</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>SmallMechanicalMonopod</def>
+              <customLabel>back left monopod</customLabel>
+              <coverage>0.5</coverage>
+			  <parts>
+				<li>
+					<def>SmallSpike</def>
+					<customLabel>back left leg spike</customLabel>
+					<coverage>0.5</coverage>
+				<groups>
+					<li>SmallLegSpike</li>
+				</groups>
+				</li>
+			  </parts>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>Reactor</def>
+          <coverage>0.06</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>FluidReprocessor</def>
+          <coverage>0.04</coverage>
+          <depth>Inside</depth>
+        </li>
+      </parts>
+    </corePart>
+  </BodyDef>
+
+<!-- Rancher -->
+  <BodyDef>
+    <defName>Mech_Rancher</defName>
+    <label>rancher</label>
+    <corePart>
+      <def>MechanicalThorax</def>
+      <height>Middle</height>
+      <depth>Outside</depth>
+      <parts>
+        <li>
+          <def>MechanicalNeck</def>
+          <coverage>0.10</coverage>
+          <height>Top</height>
+          <parts>
+            <li>
+              <def>MechanicalHead</def>
+              <coverage>0.80</coverage>
+              <groups>
+                <li>HeadAttackTool</li>
+              </groups>
+              <parts>
+                <li>
+                  <def>ArtificialBrain</def>
+                  <coverage>0.10</coverage>
+                  <depth>Inside</depth>
+                </li>
+                <li>
+                  <def>SightSensor</def>
+                  <customLabel>left sight sensor</customLabel>
+                  <coverage>0.13</coverage>
+                </li>
+                <li>
+                  <def>HearingSensor</def>
+                  <customLabel>left hearing sensor</customLabel>
+                  <coverage>0.10</coverage>
+                </li>
+                <li>
+                  <def>SmellSensor</def>
+                  <coverage>0.10</coverage>
+                </li>
+                <li>
+                  <def>SmallSpeaker</def>
+                  <coverage>0.10</coverage>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>MechanicalShoulder</def>
+          <customLabel>shoulder</customLabel>
+          <coverage>0.17</coverage>
+          <parts>
+            <li>
+              <def>MechanicalArm</def>
+              <customLabel>arm</customLabel>
+              <coverage>0.85</coverage>
+              <parts>
+                <li>
+                  <def>SmallGrabber</def>
+                  <customLabel>grabber</customLabel>
+                  <coverage>0.3</coverage>
+                  <groups>
+                    <li>SmallGrabber</li>
+                  </groups>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li> 
+        <li>
+          <def>SmallMechanicalLeg</def>
+          <customLabel>left leg</customLabel>
+          <coverage>0.2</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>SmallMechanicalFoot</def>
+              <customLabel>left foot</customLabel>
+              <coverage>0.2</coverage>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>SmallMechanicalLeg</def>
+          <customLabel>right leg</customLabel>
+          <coverage>0.2</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>SmallMechanicalFoot</def>
+              <customLabel>right foot</customLabel>
+              <coverage>0.2</coverage>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>Reactor</def>
+          <coverage>0.06</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>FluidReprocessor</def>
+          <coverage>0.04</coverage>
+          <depth>Inside</depth>
+        </li>
+      </parts>
+    </corePart>
+  </BodyDef>
+
+
+</Defs>
