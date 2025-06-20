@@ -32,6 +32,7 @@ namespace MoreMechanitorMechs
             var continueGetStatValue = il.DefineLabel();
             var skipGetStatValue = il.DefineLabel();
             bool assignSkipStat = false;
+            bool called = false;
 
             //Try Bond With
             MethodInfo TryDeverlopBondRelation = AccessTools.Method(typeof(RelationsUtility), "TryDevelopBondRelation");
@@ -60,6 +61,7 @@ namespace MoreMechanitorMechs
                     yield return new CodeInstruction(OpCodes.Ldloc_0);
                     yield return new CodeInstruction(OpCodes.Call, AccessTools.Method(typeof(Pawn), "get_RaceProps")); // Load pawn.RaceProps
                     yield return new CodeInstruction(OpCodes.Call, AccessTools.Method(typeof(RaceProperties), "get_IsMechanoid")); // Call get_IsMechanoid
+                    Log.Message("Break 1");
                     yield return new CodeInstruction(OpCodes.Brfalse_S, continueInteractLabel); // If not Mechanoid, jump to the original code
                     yield return new CodeInstruction(OpCodes.Pop);
                     yield return new CodeInstruction(OpCodes.Pop);
@@ -77,12 +79,13 @@ namespace MoreMechanitorMechs
                     assignSkipStat = false;
                 }
 
-                if (instruction.opcode == OpCodes.Call && instruction.Calls(GetStatValue))
+                if (instruction.opcode == OpCodes.Call && instruction.Calls(GetStatValue) && !called)
                 {
                     // if (pawn.RaceProps.IsMechanoid)
                     yield return new CodeInstruction(OpCodes.Ldloc_0);
                     yield return new CodeInstruction(OpCodes.Call, AccessTools.Method(typeof(Pawn), "get_RaceProps")); // Load pawn.RaceProps
                     yield return new CodeInstruction(OpCodes.Call, AccessTools.Method(typeof(RaceProperties), "get_IsMechanoid")); // Call get_IsMechanoid
+                    Log.Message("Break 2");
                     yield return new CodeInstruction(OpCodes.Brfalse_S, continueGetStatValue); // If not Mechanoid, jump to the original code
                     yield return new CodeInstruction(OpCodes.Pop);
                     yield return new CodeInstruction(OpCodes.Pop);
@@ -92,6 +95,7 @@ namespace MoreMechanitorMechs
                     yield return new CodeInstruction(OpCodes.Br, skipGetStatValue);
                     instruction.labels.Add(continueGetStatValue);
                     assignSkipStat = true;
+                    called = true;
 
                 }
 
@@ -111,6 +115,7 @@ namespace MoreMechanitorMechs
                     yield return new CodeInstruction(OpCodes.Ldloc_0);
                     yield return new CodeInstruction(OpCodes.Call, AccessTools.Method(typeof(Pawn), "get_RaceProps")); // Load pawn.RaceProps
                     yield return new CodeInstruction(OpCodes.Call, AccessTools.Method(typeof(RaceProperties), "get_IsMechanoid")); // Call get_IsMechanoid
+                    Log.Message("Break 3");
                     yield return new CodeInstruction(OpCodes.Brfalse_S, continueTryDevelopBondRelation); // If not Mechanoid, jump to the original code
                     yield return new CodeInstruction(OpCodes.Pop);
                     yield return new CodeInstruction(OpCodes.Pop);

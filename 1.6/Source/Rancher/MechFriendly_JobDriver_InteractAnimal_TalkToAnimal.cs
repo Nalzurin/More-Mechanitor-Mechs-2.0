@@ -17,7 +17,7 @@ namespace MoreMechanitorMechs
     {
         private static MethodBase TargetMethod()
         {
-            return AccessTools.Method(AccessTools.Inner(typeof(JobDriver_InteractAnimal), "<>c__DisplayClass18_0"), "<TalkToAnimal>b__0");
+            return AccessTools.Method(AccessTools.Inner(typeof(JobDriver_InteractAnimal), "<>c__DisplayClass20_0"), "<TalkToAnimal>b__0");
         }
         private static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions, ILGenerator il)
         {

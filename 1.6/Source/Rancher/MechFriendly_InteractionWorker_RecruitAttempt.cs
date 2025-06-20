@@ -15,14 +15,14 @@ namespace MoreMechanitorMechs
     [HarmonyPatch]
     public static class MechFriendly_InteractionWorker_RecruitAttempt
     {
-        private static MethodBase TargetMethod()
+        public static MethodBase TargetMethod()
         {
             return AccessTools.Method(typeof(InteractionWorker_RecruitAttempt), "DoRecruit", new Type[] { typeof(Pawn), typeof(Pawn), typeof(string).MakeByRefType(), typeof(string).MakeByRefType(), typeof(bool), typeof(bool)});
         }
-        private static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions, ILGenerator il)
+        public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions, ILGenerator il)
         {
             var recruiterField = typeof(InteractionWorker_RecruitAttempt)
-                        .GetNestedType("<>c__DisplayClass14_0", BindingFlags.NonPublic)
+                        .GetNestedType("<>c__DisplayClass13_0", BindingFlags.NonPublic)
                         .GetField("recruiter", BindingFlags.Instance | BindingFlags.Public);
             MethodInfo TryDevelopBond = AccessTools.Method(typeof(RelationsUtility), "TryDevelopBondRelation");
             var continueDevelopBond = il.DefineLabel();
