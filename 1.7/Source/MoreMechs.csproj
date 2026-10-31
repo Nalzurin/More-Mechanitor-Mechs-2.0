@@ -19,7 +19,8 @@
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
       <OutputPath>..\Assemblies\</OutputPath>
-    <DebugType>full</DebugType>
+        <DebugType>full</DebugType>
+        <GenerateDependencyFile>false</GenerateDependencyFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -46,8 +47,8 @@
     <Compile Include="$(SharedSrc)Mechamind\MechFriendly_JobDriver_Research.cs" />
     <Compile Include="$(SharedSrc)Rancher\MechFriendly_TryDevelopBondRelation.cs" />
     <Compile Include="$(SharedSrc)Rancher\MechFriendly_DoReleaseAnimal.cs" />
-    <Compile Include="$(SharedSrc)Rancher\MechFriendly_JobDriver_GatherAnimalBodyResources.cs" />
-    <Compile Include="$(SharedSrc)Rancher\MechFriendly_InteractionWorker_RecruitAttempt.cs" />
+    <Compile Include="$(SharedSrc)Rancher\MechFriendly_JobDriver_GatherAnimalBodyResources.cs" />    
+    <Compile Include="Rancher\MechFriendly_InteractionWorker_RecruitAttempt.cs" />
     <Compile Include="$(SharedSrc)Rancher\MechFriendly_Toils_Interpersonal_TryRecruit_Tame.cs" />
     <Compile Include="$(SharedSrc)Rancher\MechFriendly_Toils_Interpersonal_TryTrain.cs" />
     <Compile Include="$(SharedSrc)Rancher\MechFriendly_WorkGiver_InteractWithAnimal.cs" />
