@@ -17,7 +17,7 @@ namespace MoreMechanitorMechs
     {
         public static MethodBase TargetMethod()
         {
-            return AccessTools.Method(typeof(InteractionWorker_RecruitAttempt), "DoRecruit", new Type[] { typeof(Pawn), typeof(Pawn), typeof(string).MakeByRefType(), typeof(string).MakeByRefType(), typeof(bool), typeof(bool)});
+            return AccessTools.Method(typeof(InteractionWorker_RecruitAttempt), "DoRecruit", new Type[] { typeof(Pawn), typeof(Pawn), typeof(string).MakeByRefType(), typeof(string).MakeByRefType(), typeof(bool), typeof(bool) });
         }
         public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions, ILGenerator il)
         {
@@ -28,12 +28,20 @@ namespace MoreMechanitorMechs
             var continueDevelopBond = il.DefineLabel();
             var skipDevelopBond = il.DefineLabel();
             bool skip = false;
+            bool skipPop = false;
+
             foreach (CodeInstruction instruction in instructions)
             {
                 if (skip)
                 {
                     instruction.labels.Add(skipDevelopBond);
                     skip = false;
+                }
+
+                if (skipPop)
+                {
+                    skipPop = false;
+                    skip = true;
                 }
                 if (instruction.opcode == OpCodes.Call && instruction.Calls(TryDevelopBond))
                 {
@@ -48,9 +56,9 @@ namespace MoreMechanitorMechs
                     yield return new CodeInstruction(OpCodes.Pop);
                     yield return new CodeInstruction(OpCodes.Br, skipDevelopBond);
                     instruction.labels.Add(continueDevelopBond);
-                    skip = true;
+                    skipPop = true;
                 }
-                
+
                 yield return instruction;
             }
         }

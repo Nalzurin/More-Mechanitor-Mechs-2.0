@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <!--Wardron-->
+  <Operation MayRequire="weilbyte.snapout" Class="PatchOperationConditional">
+    <xpath>Defs/WorkGiverDef[defName="SnapOut_CalmPawnDownWorkgiver"]/canBeDoneByMechs</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/WorkGiverDef[defName="SnapOut_CalmPawnDownWorkgiver"]</xpath>
+      <value>
+        <canBeDoneByMechs>false</canBeDoneByMechs>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/WorkGiverDef[defName="SnapOut_CalmPawnDownWorkgiver"]/canBeDoneByMechs</xpath>
+      <value>
+        <canBeDoneByMechs>false</canBeDoneByMechs>
+      </value>
+    </match>
+  </Operation>
+</Patch>

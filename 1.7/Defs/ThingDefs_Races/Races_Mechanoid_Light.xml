@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!-- Wardron -->
+  <ThingDef ParentName="LightMechanoid">
+    <defName>Mech_Wardron</defName>
+    <label>Wardron</label>
+    <description>An advanced mechanoid capable of wardening and looking over prisoners. Comes equipped with a stunning baton. Incapable of recruiting prisoners.</description>
+    <tools>
+    </tools>
+    <race>
+      <body>Mech_Light</body>
+      <mechEnabledWorkTypes>
+        <li>Warden</li>
+      </mechEnabledWorkTypes>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Fabricor_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Fabricor_Death</soundDeath>
+          <soundCall>Pawn_Mech_Fabricor_Call</soundCall>
+        </li>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Fabricor_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Fabricor_Death</soundDeath>
+          <soundCall>Pawn_Mech_Fabricor_Call</soundCall>
+        </li>
+      </lifeStageAges>
+    </race>
+  </ThingDef>
+
+  <PawnKindDef ParentName="NonCombatLightMechanoidKind">
+    <defName>Mech_Wardron</defName>
+    <label>Wardron</label>
+    <race>Mech_Wardron</race>
+    <combatPower>50</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/Wardron</texPath>
+          <maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Wardron</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.25</drawSize>
+            <shadowData>
+              <volume>(0.3, 0.4, 0.3)</volume>
+              <offset>(0,0,-0.25)</offset>
+            </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/AncientWardron</texPath>
+          <maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Wardron</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.25</drawSize>
+            <shadowData>
+              <volume>(0.3, 0.4, 0.3)</volume>
+              <offset>(0,0,-0.25)</offset>
+            </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponTags>
+      <li>Wardron_Weapon</li>
+    </weaponTags>
+  </PawnKindDef>
+  
+  
+  <!-- Mechamind -->
+  <ThingDef ParentName="LightMechanoid">
+    <defName>Mech_Mechamind</defName>
+    <label>Mechamind</label>
+    <description>An advanced mechanoid capable of research and scanning. Although it is not meant for combat, it can assist in combat by firing electromagnetic pulses.</description>
+    <tools>
+    </tools>
+    <race>
+      <body>Mech_Mechamind</body>
+      <mechEnabledWorkTypes>
+        <li>Research</li>
+      </mechEnabledWorkTypes>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Fabricor_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Fabricor_Death</soundDeath>
+          <soundCall>Pawn_Mech_Fabricor_Call</soundCall>
+        </li>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Fabricor_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Fabricor_Death</soundDeath>
+          <soundCall>Pawn_Mech_Fabricor_Call</soundCall>
+        </li>
+      </lifeStageAges>
+    </race>
+  </ThingDef>
+
+  <PawnKindDef ParentName="NonCombatLightMechanoidKind">
+    <defName>Mech_Mechamind</defName>
+    <label>Mechamind</label>
+    <race>Mech_Mechamind</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/Mechamind</texPath>
+          <maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Mechamind</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.5</drawSize>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/AncientMechamind</texPath>
+          <maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Mechamind</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.5</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponTags>
+      <li>Mechamind_EMPEmitter</li>
+    </weaponTags>
+  </PawnKindDef>
+  
+  
+  <!-- Gastromech -->
+  <ThingDef ParentName="LightMechanoid">
+    <defName>Mech_Gastromech</defName>
+    <label>Gastromech</label>
+    <description>A small mechanoid designed to cook meals. While it is better suited to labor than combat, it can fight with its large knife and spatula if needed.</description>
+    <tools>
+      <li>
+        <label>chef knife</label>
+        <capacities>
+          <li>Cut</li>
+          <li>Stab</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftBlade</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>spatula</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightSpatula</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+    </tools>
+    <statBases>
+      <FoodPoisonChance>0.01</FoodPoisonChance>
+    </statBases>
+    <race>
+      <body>Mech_Gastromech</body>
+      <mechEnabledWorkTypes>
+        <li>Cooking</li>
+      </mechEnabledWorkTypes>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Agrihand_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Agrihand_Death</soundDeath>
+          <soundCall>Pawn_Mech_Agrihand_Call</soundCall>
+        </li>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Agrihand_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Agrihand_Death</soundDeath>
+          <soundCall>Pawn_Mech_Agrihand_Call</soundCall>
+        </li>
+      </lifeStageAges>
+    </race>
+  </ThingDef>
+
+  <PawnKindDef ParentName="NonCombatLightMechanoidKind">
+    <defName>Mech_Gastromech</defName>
+    <label>Gastromech</label>
+    <race>Mech_Gastromech</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/Gastromech</texPath>
+          <maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Mech_Gastromech</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.4</drawSize>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/AncientGastromech</texPath>
+          <maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Mech_Gastromech</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.4</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+  <!-- Decorator -->
+  <ThingDef ParentName="LightMechanoid">
+    <defName>Mech_Decorator</defName>
+    <label>decorator</label>
+    <description>A small work mechanoid with six bladed arms. It uses its limbs to delicately and precisely carve, weave, sew, and chisel a variety of materials to create artwork and clothing. If needed, it can use its bladed arms to defend itself.</description>
+    <tools>
+      <li>
+        <label>Left Pick</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>1</power>
+        <cooldownTime>0.25</cooldownTime>
+        <linkedBodyPartsGroup>LeftBlade</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>Right Pick</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>1</power>
+        <cooldownTime>0.25</cooldownTime>
+        <linkedBodyPartsGroup>RightBlade</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+    </tools>
+    <race>
+      <body>Mech_Decorator</body>
+      <mechEnabledWorkTypes>
+        <li>Art</li>
+        <li>Tailoring</li>
+      </mechEnabledWorkTypes>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Fabricor_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Fabricor_Death</soundDeath>
+          <soundCall>Pawn_Mech_Fabricor_Call</soundCall>
+        </li>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Fabricor_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Fabricor_Death</soundDeath>
+          <soundCall>Pawn_Mech_Fabricor_Call</soundCall>
+        </li>
+      </lifeStageAges>
+    </race>
+  </ThingDef>
+
+  <PawnKindDef ParentName="NonCombatLightMechanoidKind">
+    <defName>Mech_Decorator</defName>
+    <label>Decorator</label>
+    <race>Mech_Decorator</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/Decorator</texPath>
+          <maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Mech_Decorator</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.4</drawSize>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/AncientDecorator</texPath>
+          <maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Mech_Decorator</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.4</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+  <!-- Scavoid -->
+  <ThingDef ParentName="LightMechanoid">
+    <defName>Mech_Scavoid</defName>
+    <label>Scavoid</label>
+    <description>A cheap swarming unit with 4 blade-tipped legs that explodes upon death. It is capable of basic manipulation, such as flicking switches, as well as stripping equipment from the dead and disposing of the corpses.</description>
+    <statBases>
+      <MoveSpeed>4.4</MoveSpeed>
+    </statBases>
+    <race>
+      <deathAction>
+        <workerClass>DeathActionWorker_BigExplosion</workerClass>
+      </deathAction>
+      <baseBodySize>0.4</baseBodySize>
+      <body>Mech_Scavoid</body>
+      <mechEnabledWorkTypes>
+        <li>BasicWorker</li>
+      </mechEnabledWorkTypes>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_WarUrchin_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_WarUrchin_Death</soundDeath>
+          <soundCall>Pawn_Mech_WarUrchin_Call</soundCall>
+        </li>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_WarUrchin_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_WarUrchin_Death</soundDeath>
+          <soundCall>Pawn_Mech_WarUrchin_Call</soundCall>
+        </li>
+      </lifeStageAges>
+    </race>
+    <tools Inherit="False">
+      <li>
+        <label>leg spikes</label>
+        <capacities>
+          <li>Stab</li>
+          <li>Cut</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>SmallLegSpike</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <PawnKindDef ParentName="NonCombatLightMechanoidKind">
+    <defName>Mech_Scavoid</defName>
+    <label>scavoid</label>
+    <race>Mech_Scavoid</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/Scavoid</texPath>
+          <maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Mech_Scavoid</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>0.9</drawSize>
+        </bodyGraphicData>
+      </li>
+      <li>  
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/AncientScavoid</texPath>
+          <maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Mech_Scavoid</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>0.9</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+  <!-- Rancher -->
+  <ThingDef ParentName="LightMechanoid">
+    <defName>Mech_Rancher</defName>
+    <label>rancher</label>
+    <description>A small mechanoid designed tame, train, and handle animals. Its adaptable arm allows it to harvest all manners of animal products.</description>
+    <tools>
+      <li>
+        <label>grabber</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>SmallGrabber</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+    </tools>
+    <statBases>
+      <WorkSpeedGlobal>1</WorkSpeedGlobal>
+      <BandwidthCost>2</BandwidthCost>
+    </statBases>
+    <race>
+      <body>Mech_Rancher</body>
+      <mechEnabledWorkTypes>
+        <li>Handling</li>
+      </mechEnabledWorkTypes>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Agrihand_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Agrihand_Death</soundDeath>
+          <soundCall>Pawn_Mech_Agrihand_Call</soundCall>
+        </li>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Agrihand_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Agrihand_Death</soundDeath>
+          <soundCall>Pawn_Mech_Agrihand_Call</soundCall>
+        </li>
+      </lifeStageAges>
+    </race>
+  </ThingDef>
+
+  <PawnKindDef ParentName="NonCombatLightMechanoidKind">
+    <defName>Mech_Rancher</defName>
+    <label>rancher</label>
+    <race>Mech_Rancher</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/Rancher</texPath>
+          <maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Mech_Rancher</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.1</drawSize>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/AncientRancher</texPath>
+          <maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Mech_Rancher</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.1</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+</Defs>
