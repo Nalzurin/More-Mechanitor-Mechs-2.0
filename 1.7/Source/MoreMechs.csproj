@@ -1,0 +1,65 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RimWorldDir Condition="'$(RimWorldDir)' == ''">..\..\..\..\</RimWorldDir>
+  </PropertyGroup>
+  <PropertyGroup>
+    <WorkshopDir Condition="'$(WorkshopDir)' == ''">$(RimWorldDir)..\..\workshop\content\294100\</WorkshopDir>
+    <SharedSrc>..\..\1.6\Source\</SharedSrc>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <AssemblyName>MoreMechanitorMechs</AssemblyName>
+    <RootNamespace>MoreMechanitorMechs</RootNamespace>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+      <OutputPath>..\Assemblies\</OutputPath>
+        <DebugType>full</DebugType>
+        <GenerateDependencyFile>false</GenerateDependencyFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>$(WorkshopDir)2009463077\1.7\Assemblies\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(RimWorldDir)Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityStubs">
+      <HintPath>$(RimWorldDir)UnityStubs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Waylith">
+      <HintPath>$(RimWorldDir)Waylith.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="$(SharedSrc)Mechamind\MechFriendly_JobDriver_OperateScanner.cs" />
+    <Compile Include="$(SharedSrc)Mechamind\MechFriendly_JobDriver_Research.cs" />
+    <Compile Include="$(SharedSrc)Rancher\MechFriendly_TryDevelopBondRelation.cs" />
+    <Compile Include="$(SharedSrc)Rancher\MechFriendly_DoReleaseAnimal.cs" />
+    <Compile Include="$(SharedSrc)Rancher\MechFriendly_JobDriver_GatherAnimalBodyResources.cs" />    
+    <Compile Include="Rancher\MechFriendly_InteractionWorker_RecruitAttempt.cs" />
+    <Compile Include="$(SharedSrc)Rancher\MechFriendly_Toils_Interpersonal_TryRecruit_Tame.cs" />
+    <Compile Include="$(SharedSrc)Rancher\MechFriendly_Toils_Interpersonal_TryTrain.cs" />
+    <Compile Include="$(SharedSrc)Rancher\MechFriendly_WorkGiver_InteractWithAnimal.cs" />
+    <Compile Include="$(SharedSrc)Rancher\MechFriendly_JobDriver_InteractAnimal_TalkToAnimal.cs" />
+    <Compile Include="$(SharedSrc)Rancher\MechFriendly_Toils_Interpersonal_WaitToBeAbleToInteract.cs" />
+    <Compile Include="$(SharedSrc)MoreMechs.cs" />
+    <Compile Include="$(SharedSrc)Properties\AssemblyInfo.cs" />
+    <Compile Include="$(SharedSrc)SpecificWorkJobGiver.cs" />
+    <Compile Include="$(SharedSrc)Wardron\MechFriendly_JobDriver_ActivitySuppression.cs" />
+    <Compile Include="$(SharedSrc)Wardron\Wardron_IsSociallyProper.cs" />
+    <Compile Include="$(SharedSrc)Wardron\MechFriendly_JobDriver_SuppressSlave.cs" />
+  </ItemGroup>
+
+</Project>

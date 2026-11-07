@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- Vanilla Expanded Framework Patches -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/WorkGiverDef[defName="VEF_AnimalResource"]/canBeDoneByMechs</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/WorkGiverDef[defName="VEF_AnimalResource"]</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/WorkGiverDef[defName="VEF_AnimalResource"]/canBeDoneByMechs</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </match>
+  </Operation>
+</Patch>

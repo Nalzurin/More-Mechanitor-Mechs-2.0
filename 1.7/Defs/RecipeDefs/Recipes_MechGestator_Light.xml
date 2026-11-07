@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!--Gastromech-->
+  <RecipeDef ParentName="LightMechanoidRecipe">
+    <defName>Gastromech</defName>
+    <label>gestate gastromech</label>
+    <description>Gestate a gastromech mechanoid.</description>
+    <researchPrerequisite>StandardMechtech</researchPrerequisite>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreRegular</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <Mech_Gastromech>1</Mech_Gastromech>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>Mech_Gastromech</ThingDef>
+    </descriptionHyperlinks>
+	<recipeUsers>
+		<li>MechGestator</li>
+	</recipeUsers>
+  </RecipeDef>
+  <!--Wardron-->
+  <RecipeDef ParentName="LightMechanoidRecipe">
+    <defName>Wardron</defName>
+    <label>gestate wardron</label>
+    <description>Gestate a wardron mechanoid.</description>
+    <researchPrerequisite>StandardMechtech</researchPrerequisite>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreRegular</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+    <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <products>
+      <Mech_Wardron>1</Mech_Wardron>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>Mech_Wardron</ThingDef>
+    </descriptionHyperlinks>
+    <recipeUsers>
+      <li>MechGestator</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <!--Mechamind-->
+  <RecipeDef ParentName="LightMechanoidRecipe">
+    <defName>Mechamind</defName>
+    <label>gestate mechamind</label>
+    <description>Gestate a mechamind mechanoid.</description>
+    <researchPrerequisite>HighMechtech</researchPrerequisite>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreHigh</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+          <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <products>
+      <Mech_Mechamind>1</Mech_Mechamind>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>Mech_Mechamind</ThingDef>
+    </descriptionHyperlinks>
+  <recipeUsers>
+		<li>MechGestator</li>
+  </recipeUsers>
+  </RecipeDef>
+    
+ <!--Rancher-->
+  <RecipeDef ParentName="LightMechanoidRecipe">
+    <defName>Rancher</defName>
+    <label>gestate Rancher</label>
+    <description>Gestate a Rancher mechanoid.</description>
+    <researchPrerequisite>StandardMechtech</researchPrerequisite>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreRegular</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <products>
+      <Mech_Rancher>1</Mech_Rancher>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>Mech_Rancher</ThingDef>
+    </descriptionHyperlinks>
+    <recipeUsers>
+      <li>MechGestator</li>
+    </recipeUsers>
+  </RecipeDef>
+<!--Decorator-->
+  <RecipeDef ParentName="LightMechanoidRecipe">
+    <defName>Decorator</defName>
+    <label>gestate decorator</label>
+    <description>Gestate a decorator mechanoid.</description>
+    <researchPrerequisite>StandardMechtech</researchPrerequisite>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>80</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreRegular</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <Mech_Decorator>1</Mech_Decorator>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>Mech_Decorator</ThingDef>
+    </descriptionHyperlinks>
+	<recipeUsers>
+		<li>MechGestator</li>
+	</recipeUsers>
+  </RecipeDef>
+<!--Scavoid-->
+  <RecipeDef ParentName="LightMechanoidRecipe">
+    <defName>Scavoid</defName>
+    <label>gestate scavoid</label>
+    <description>Gestate a scavoid mechanoid.</description>
+	<formingTicks>30000</formingTicks> <!-- 12 hours -->
+    <researchPrerequisite>BasicMechtech</researchPrerequisite>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <products>
+      <Mech_Scavoid>1</Mech_Scavoid>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>Mech_Scavoid</ThingDef>
+    </descriptionHyperlinks>
+	<recipeUsers>
+		<li>MechGestator</li>
+	</recipeUsers>
+  </RecipeDef>
+
+</Defs>

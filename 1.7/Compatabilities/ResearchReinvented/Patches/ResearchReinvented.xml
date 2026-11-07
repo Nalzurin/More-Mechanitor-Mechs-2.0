@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/WorkGiverDef[defName="RR_Analyse"]/canBeDoneByMechs</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/WorkGiverDef[defName="RR_Analyse"]</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/WorkGiverDef[defName="RR_Analyse"]/canBeDoneByMechs</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </match>
+  </Operation>
+  
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/WorkGiverDef[defName="RR_AnalyseInPlace"]/canBeDoneByMechs</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/WorkGiverDef[defName="RR_AnalyseInPlace"]</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/WorkGiverDef[defName="RR_AnalyseInPlace"]/canBeDoneByMechs</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/WorkGiverDef[defName="RR_AnalyseTerrain"]/canBeDoneByMechs</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/WorkGiverDef[defName="RR_AnalyseTerrain"]</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/WorkGiverDef[defName="RR_AnalyseTerrain"]/canBeDoneByMechs</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/WorkGiverDef[defName="RR_ResearchRR"]/canBeDoneByMechs</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/WorkGiverDef[defName="RR_ResearchRR"]</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/WorkGiverDef[defName="RR_ResearchRR"]/canBeDoneByMechs</xpath>
+      <value>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+      </value>
+    </match>
+  </Operation>
+</Patch>
